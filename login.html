@@ -41,7 +41,7 @@
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password" placeholder="Enter your password" required>
                     </div>
-                    <button type="submit" class="btn">Login</button>
+                    <button onclick="simulateError()" type="submit" class="btn">Login</button> <!-- Simulate error button -->
                 </form>
                 <p class="forgot-password"><a href="#">Forgot your password?</a></p>
             </div>
@@ -52,5 +52,12 @@
     <footer>
         <p>&copy; 2024 ThriveCycle. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        function simulateError() {
+            // Redirect to the custom error page
+            window.location.href = '405.html';
+        }
+    </script>
 </body>
 </html>
