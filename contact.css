@@ -1,0 +1,158 @@
+/* General Styles */
+:root {
+    --primary-color: #009688;
+    --secondary-color: #ffffff;
+    --text-color: #333;
+    --heading-font: 'Arial', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    font-family: var(--body-font);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem 2rem;
+  }
+  
+  header .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  header .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  header nav ul li {
+    display: inline;
+  }
+  
+  header nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  header nav ul li a:hover,
+  header nav ul li a.active {
+    background: #00796b;
+    border-radius: 5px;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    text-align: center;
+    padding: 2rem;
+    background-image: url('/img/contact_page.jpg'); /* Add your background image path here */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: var(--secondary-color);
+  }
+  
+  .hero-section h1 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    display: flex;
+    gap: 4rem; /* Increased gap from 2rem to 4rem */
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact-section .form-container,
+  .contact-section .contact-info {
+    flex: 1;
+  }
+  
+  .contact-section h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form .btn {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+  
+  .contact-form .btn:hover {
+    background: #00796b;
+  }
+  
+  /* Contact Info */
+  .contact-info p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  
+  .contact-info p strong {
+    font-weight: bold;
+  }
+
+  .contact-info {
+    margin-left: 2rem; /* Add margin to the left */
+  }
+
+  
+  /* Footer */
+  footer {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
